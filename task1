@@ -1,0 +1,13 @@
+void main() { 
+  String numString = "5349876218"; // исходное число
+  int largestNum = 0; // самое большое число
+  
+  for (int i = 0; i <= numString.length - 5; i++) {
+    String subString = numString.substring(i, i + 5);
+    int subNum = int.parse(subString) ;
+    if (subNum > largestNum) {
+      largestNum = subNum;
+    }
+  }
+print(“Самое большое число,которое может быть образованно 5 последовательными расположениями символов: 98762
+}
