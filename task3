@@ -1,0 +1,3 @@
+String binaryNumber = "10101";
+int decimalNumber = int.parse(binaryNumber, radix: 2);
+print(decimalNumber); // Output: 21
