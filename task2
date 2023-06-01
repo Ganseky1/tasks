@@ -1,0 +1,21 @@
+void main() {
+  String str = "This is a String";
+  List<String> characters = str.toLowerCase().split("");
+  Map<String, int> charCount = {};
+
+  for (String char in characters) {
+    if (charCount.containsKey(char)) {
+      charCount[char]++;
+    } else {
+      charCount[char] = 1;
+    }
+   }
+
+   int count = 0;
+   for (int value in charCount.values) {
+     if (value > 1) {
+        count++;
+     }
+   }
+   print("Количество символов, встречающихся более 1 раза: $count");
+}
